@@ -4,7 +4,7 @@ Arnotixe's eslint plugins
 # Installation
 `npm i github:arnotixe/eslint-plugin-arnotixe` 
 
-in your .eslintrc.json, add the plugin to the "plugins" array (or add the array too, if it isn't there):
+in your .eslintrc.json, add the plugin to the "plugins" array (or add the array too, if it isn't there), and enable the rule at your preferred warning level:
 ```
 {
   "env": …,
