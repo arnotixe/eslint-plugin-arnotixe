@@ -21,6 +21,8 @@ Why? Safari crashes if you do `const then = new Date("2023-1-1");`. See https://
 
 This rule warns if any Date() call contains a hyphen. Like `Date("2023-1-1")`. Use `Date("2023/1/1")` instead. CAVEATS: Check if Date() written with / returns UTC or local time. May be browser dependent. Yes, I know Safari COULD take some formats with a hyphen (like the american month-first "MM-dd-yyyy"), but a warning is in order.
 
+**fix** this rule can auto-fix "-" into "/". Run linter with --fix (or choose to fix in your editor).
+
 # Notes to self
 To work, an eslint plugin *must* be called eslint-plugin-*something*, but in .eslintrc.json the plugin *must* be referred to as only *something*, and the rules *something/rulename*
 
